@@ -32,6 +32,58 @@ This project demonstrates a TCP client-server communication model. It includes a
 - One client acts as a producer, sending data to the server.
 - The server forwards the data to the consumer client.
 
+## Example Execution
+
+1. **Run the Main Server**:
+    ```sh
+    ./main_server
+    ```
+    Output:
+    ```
+    Main server listening on port 1000...
+    ```
+
+2. **Run the Worker Server**:
+    ```sh
+    ./worker_server
+    ```
+    Output:
+    ```
+    Worker server listening on port 1001...
+    ```
+
+3. **Run the Client**:
+    ```sh
+    ./client <server_ip> 1000
+    ```
+    Replace `<server_ip>` with the IP address of the server machine.
+
+    Output:
+    ```
+    Connected to server <server_ip> on port 1000.
+    ```
+
+4. **Client Interaction**:
+    - **Producer Client**: Send data by typing and pressing Enter.
+    - **Consumer Client**: Receive data and display it.
+
+## How to Use
+
+1. **Start the Main Server**:
+    - Open a terminal and run `./main_server`.
+
+2. **Start the Worker Server**:
+    - Open another terminal and run `./worker_server`.
+
+3. **Start the Clients**:
+    - Open additional terminals for each client and run `./client <server_ip> 1000`.
+
+4. **Producer Client**:
+    - Type messages and press Enter to send data to the server.
+
+5. **Consumer Client**:
+    - Receive messages from the server and display them.
+
 ## Authors
 
 - Min Khant Soe Oke
